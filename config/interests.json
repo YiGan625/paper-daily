@@ -1,128 +1,91 @@
 {
   "sources": [
-    { "type": "arxiv", "name": "arXiv" }
+    {
+      "type": "feed",
+      "name": "Mechanical Systems and Signal Processing",
+      "url": "https://rss.sciencedirect.com/publication/science/08883270"
+    },
+    {
+      "type": "feed",
+      "name": "Measurement",
+      "url": "https://rss.sciencedirect.com/publication/science/02632241"
+    },
+    {
+      "type": "feed",
+      "name": "Engineering Applications of Artificial Intelligence",
+      "url": "https://rss.sciencedirect.com/publication/science/09521976"
+    },
+    {
+      "type": "feed",
+      "name": "Reliability Engineering & System Safety",
+      "url": "https://rss.sciencedirect.com/publication/science/09518320"
+    },
+    {
+      "type": "feed",
+      "name": "Sensors",
+      "url": "https://www.mdpi.com/rss/journal/sensors"
+    },
+    {
+      "type": "feed",
+      "name": "Machines",
+      "url": "https://www.mdpi.com/rss/journal/machines"
+    }
   ],
   "conference_sources": {
-    "enabled": true,
+    "enabled": false,
     "current_year": 2026,
     "lookback_years": 2,
-    "venues": [
-      {
-        "id": "isca",
-        "name": "ISCA",
-        "group": "computer architecture",
-        "dblp_toc_patterns": ["db/conf/isca/isca{year}.bht"]
-      },
-      {
-        "id": "micro",
-        "name": "MICRO",
-        "group": "computer architecture",
-        "dblp_toc_patterns": ["db/conf/micro/micro{year}.bht"]
-      },
-      {
-        "id": "hpca",
-        "name": "HPCA",
-        "group": "computer architecture",
-        "dblp_toc_patterns": ["db/conf/hpca/hpca{year}.bht"]
-      },
-      {
-        "id": "asplos",
-        "name": "ASPLOS",
-        "group": "computer architecture",
-        "dblp_toc_patterns": [
-          "db/conf/asplos/asplos{year}-1.bht",
-          "db/conf/asplos/asplos{year}-2.bht",
-          "db/conf/asplos/asplos{year}-3.bht",
-          "db/conf/asplos/asplos{year}-4.bht"
-        ]
-      },
-      {
-        "id": "mlsys",
-        "name": "MLSys",
-        "group": "systems for machine learning",
-        "dblp_toc_patterns": ["db/conf/mlsys/mlsys{year}.bht"]
-      },
-      {
-        "id": "eurosys",
-        "name": "EuroSys",
-        "group": "systems",
-        "dblp_toc_patterns": ["db/conf/eurosys/eurosys{year}.bht"]
-      }
-    ]
+    "venues": []
   },
   "topics": [
     {
-      "id": "llm_low_precision_quantization",
-      "name": "大模型低精度量化",
-      "description": "关注大语言模型低比特量化、混合精度、量化感知训练、后训练量化、权重量化、激活量化、KV cache 量化以及量化对推理性能和精度的影响。",
+      "id": "mechanical_fault_diagnosis",
+      "name": "机械设备故障诊断",
+      "description": "关注机械设备状态监测与故障诊断，重点包括往复式压缩机、活塞压缩机、旋转机械、轴承、电机、齿轮箱等设备的振动信号、应变信号、压力信号、电流信号分析，以及故障特征提取、异常检测、诊断模型和剩余寿命预测。不关注通用视觉模型、自然语言处理模型、机器人动作模型或大语言模型压缩量化论文。",
       "keywords": [
-        "large language model quantization",
-        "LLM quantization",
-        "low-bit quantization",
-        "post-training quantization",
-        "weight-only quantization",
-        "activation quantization",
-        "mixed precision",
-        "FP8",
-        "INT4",
-        "INT8",
-        "KV cache quantization"
-      ],
-      "arxiv_categories": ["cs.CL", "cs.LG", "cs.AI", "cs.DC"]
+        "mechanical fault diagnosis",
+        "machinery fault diagnosis",
+        "condition monitoring",
+        "predictive maintenance",
+        "prognostics and health management",
+        "PHM",
+        "bearing fault diagnosis",
+        "gearbox fault diagnosis",
+        "motor fault diagnosis",
+        "rotating machinery fault diagnosis",
+        "reciprocating machinery fault diagnosis",
+        "compressor fault diagnosis",
+        "reciprocating compressor fault diagnosis",
+        "piston compressor fault diagnosis",
+        "compressor valve fault diagnosis",
+        "vibration signal analysis",
+        "strain signal analysis",
+        "pressure signal analysis",
+        "motor current signature analysis",
+        "sensor signal processing",
+        "fault feature extraction",
+        "time frequency analysis",
+        "wavelet transform",
+        "anomaly detection",
+        "remaining useful life prediction"
+      ]
     },
     {
-      "id": "tensor_compute_unit_architecture",
-      "name": "张量计算单元结构",
-      "description": "关注 GPU/NPU/TPU 张量计算单元、矩阵乘加阵列、数据流架构、片上存储层次、低精度张量核、AI 加速器微架构和算子映射。",
+      "id": "fault_diagnosis_decision_support",
+      "name": "故障诊断智能辅助",
+      "description": "关注用于机械设备故障诊断的智能辅助方法，包括诊断知识库、检索增强诊断、故障原因推理、实验数据分析、诊断报告生成、人机协同诊断和维修决策支持。该方向必须与传感器信号、机械设备、工业状态监测或故障诊断直接相关。",
       "keywords": [
-        "tensor processing unit",
-        "tensor core",
-        "matrix multiply unit",
-        "systolic array",
-        "AI accelerator architecture",
-        "NPU architecture",
-        "GPU tensor core",
-        "low precision tensor compute",
-        "dataflow architecture",
-        "on-chip memory hierarchy"
-      ],
-      "arxiv_categories": ["cs.AR", "cs.DC", "cs.LG", "cs.PF"]
-    },
-    {
-      "id": "llm_inference_cluster_communication",
-      "name": "大模型推理集群通信优化",
-      "description": "关注分布式大模型推理、prefill/decode 分离、张量并行、流水并行、专家并行、跨节点通信、调度、负载均衡和 serving 系统吞吐延迟优化。",
-      "keywords": [
-        "LLM inference serving",
-        "distributed inference",
-        "inference cluster",
-        "tensor parallelism",
-        "pipeline parallelism",
-        "expert parallelism",
-        "all-reduce",
-        "collective communication",
-        "prefill decode disaggregation",
-        "serving scheduler"
-      ],
-      "arxiv_categories": ["cs.DC", "cs.PF", "cs.CL", "cs.LG"]
-    },
-    {
-      "id": "kvcache_compression_storage_scheduling",
-      "name": "KV cache 压缩与存储调度",
-      "description": "关注大模型推理中的 KV cache 压缩、淘汰、分页、卸载、预取、层级存储、显存管理和长上下文推理效率优化。",
-      "keywords": [
-        "KV cache compression",
-        "KV cache eviction",
-        "KV cache scheduling",
-        "paged attention",
-        "attention cache",
-        "long context inference",
-        "memory offloading",
-        "GPU memory management",
-        "cache prefetching",
-        "LLM serving memory"
-      ],
-      "arxiv_categories": ["cs.CL", "cs.LG", "cs.DC", "cs.PF"]
+        "fault diagnosis decision support",
+        "knowledge based fault diagnosis",
+        "retrieval augmented fault diagnosis",
+        "RAG for fault diagnosis",
+        "explainable fault diagnosis",
+        "fault diagnosis report generation",
+        "maintenance decision support",
+        "human in the loop fault diagnosis",
+        "sensor data diagnosis",
+        "diagnostic reasoning for mechanical systems"
+      ]
     }
   ]
 }
