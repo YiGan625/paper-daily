@@ -1,6 +1,10 @@
 {
   "sources": [
     {
+      "type": "arxiv",
+      "name": "arXiv"
+    },
+    {
       "type": "feed",
       "name": "Mechanical Systems and Signal Processing",
       "url": "https://rss.sciencedirect.com/publication/science/08883270"
@@ -9,11 +13,6 @@
       "type": "feed",
       "name": "Measurement",
       "url": "https://rss.sciencedirect.com/publication/science/02632241"
-    },
-    {
-      "type": "feed",
-      "name": "Engineering Applications of Artificial Intelligence",
-      "url": "https://rss.sciencedirect.com/publication/science/09521976"
     },
     {
       "type": "feed",
@@ -68,6 +67,12 @@
         "wavelet transform",
         "anomaly detection",
         "remaining useful life prediction"
+      ],
+      "arxiv_categories": [
+        "eess.SP",
+        "eess.SY",
+        "cs.LG",
+        "stat.ML"
       ]
     },
     {
@@ -85,6 +90,11 @@
         "human in the loop fault diagnosis",
         "sensor data diagnosis",
         "diagnostic reasoning for mechanical systems"
+      ],
+      "arxiv_categories": [
+        "eess.SY",
+        "eess.SP",
+        "cs.LG"
       ]
     }
   ]
