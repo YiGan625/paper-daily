@@ -96,6 +96,111 @@
         "eess.SP",
         "cs.LG"
       ]
+    },
+    {
+      "id": "finite_element_surrogate",
+      "name": "有限元代理模型",
+      "description": "关注机械结构有限元仿真的代理模型与计算加速，包括静力、瞬态结构响应、应力场、位移场和应变场预测，以及几何参数、材料参数、载荷和边界条件变化下的泛化。重点关注膜头、膜片、压缩机零部件等复杂机械结构的强度校核，研究 DeepONet、傅里叶神经算子、图神经网络、PointNet、物理信息学习和降阶模型在结构力学场预测中的应用；不关注与力学仿真无关的通用机器学习模型。",
+      "keywords": [
+        "finite element surrogate",
+        "finite element surrogates",
+        "finite element emulation",
+        "surrogate modeling for structural mechanics",
+        "surrogate modelling for structural mechanics",
+        "stress field prediction",
+        "displacement field prediction",
+        "neural operator for solid mechanics",
+        "finite element surrogate model",
+        "surrogate model for finite element",
+        "surrogate modeling for finite element",
+        "surrogate modelling for finite element",
+        "data-driven structural mechanics",
+        "deep learning for solid mechanics",
+        "neural operator for structural mechanics",
+        "DeepONet for solid mechanics",
+        "Fourier neural operator for solid mechanics",
+        "graph neural network for structural mechanics",
+        "PointNet for stress prediction",
+        "strain field prediction",
+        "structural response prediction",
+        "reduced order model for structural mechanics"
+      ],
+      "arxiv_categories": [
+        "cs.CE",
+        "physics.comp-ph",
+        "cs.LG",
+        "stat.ML"
+      ]
+    },
+    {
+      "id": "fluid_structure_surrogate",
+      "name": "流固耦合代理模型",
+      "description": "关注流固耦合与流固相互作用仿真的代理模型，包括压力、流速、结构位移和应力的联合预测、界面信息传递、双向耦合以及瞬态响应预测。重点关注膜片、柔性结构和压缩机相关流固耦合问题中的神经算子、图神经网络、物理信息学习、降阶模型和数据驱动计算加速，以及跨工况、跨几何与跨网格泛化；不关注缺少代理建模或数据驱动预测方法的常规流固耦合算例。",
+      "keywords": [
+        "fluid-structure interaction surrogate",
+        "fluid structure interaction surrogate",
+        "FSI surrogate",
+        "data-driven fluid-structure interaction",
+        "learning fluid-structure interaction",
+        "neural operator for fluid-structure interaction",
+        "fluid-structure interaction reduced order",
+        "fluid-structure interaction neural network",
+        "surrogate model for fluid-structure interaction",
+        "surrogate modeling for fluid-structure interaction",
+        "surrogate modelling for fluid-structure interaction",
+        "surrogate modeling of fluid-structure interaction",
+        "surrogate modelling of fluid-structure interaction",
+        "fluid-structure interaction emulation",
+        "fluid structure interaction neural network",
+        "DeepONet for fluid-structure interaction",
+        "Fourier neural operator for fluid-structure interaction",
+        "graph neural network for fluid-structure interaction",
+        "physics-informed fluid-structure interaction",
+        "reduced-order fluid-structure interaction",
+        "reduced order fluid-structure interaction",
+        "fluid-structure interaction field prediction"
+      ],
+      "arxiv_categories": [
+        "physics.flu-dyn",
+        "physics.comp-ph",
+        "cs.CE",
+        "cs.LG"
+      ]
+    },
+    {
+      "id": "thermo_mechanical_surrogate",
+      "name": "热固耦合代理模型",
+      "description": "关注热固耦合与热力耦合有限元仿真的代理模型，包括稳态和瞬态温度场、热应力场、热变形与结构强度的预测，考虑温度相关材料参数、热膨胀、对流换热、热源、压力和螺栓预紧载荷的联合影响。重点关注膜头及机械零部件的温度场到应力场映射、多物理场神经算子、DeepONet、图神经网络、物理信息学习和降阶建模，以及跨工况与跨几何泛化；不关注与热应力或结构响应无关的通用温度预测。",
+      "keywords": [
+        "thermo-mechanical surrogate",
+        "thermomechanical surrogate",
+        "thermal stress prediction",
+        "thermo-mechanical neural network",
+        "thermomechanical neural network",
+        "thermoelastic surrogate",
+        "neural operator for thermoelasticity",
+        "surrogate model for thermo-mechanical",
+        "surrogate modeling for thermo-mechanical",
+        "surrogate modelling for thermo-mechanical",
+        "surrogate modeling of thermo-mechanical",
+        "surrogate modelling of thermo-mechanical",
+        "thermo-mechanical field prediction",
+        "thermomechanical field prediction",
+        "thermoelastic neural operator",
+        "data-driven thermoelasticity",
+        "DeepONet for thermoelasticity",
+        "thermal deformation prediction",
+        "temperature and stress prediction",
+        "temperature-to-stress mapping",
+        "thermo-mechanical reduced order model",
+        "multiphysics surrogate model"
+      ],
+      "arxiv_categories": [
+        "cs.CE",
+        "physics.comp-ph",
+        "cs.LG",
+        "stat.ML"
+      ]
     }
   ]
 }
